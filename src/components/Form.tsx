@@ -1,7 +1,7 @@
 type FormPropsType = {
-  setCity: React.Dispatch<React.SetStateAction<string>>,
-  getWeather: (e: any) => void
-}
+  setCity: React.Dispatch<React.SetStateAction<string>>;
+  getWeather: (e: any) => void;
+};
 
 function Form(props: FormPropsType) {
   return (
