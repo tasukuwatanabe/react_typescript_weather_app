@@ -3,8 +3,6 @@ import Title from './components/Title';
 import Form from './components/Form';
 import Results from './components/Results';
 import './App.css';
-import { captureRejectionSymbol } from 'stream';
-import { createSecureContext } from 'tls';
 
 type ResultsStateType = {
   country: string;
