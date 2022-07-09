@@ -5,7 +5,7 @@ import Results from './components/Results';
 import Loading from './components/Loading';
 import './App.css';
 
-type ResultsStateType = {
+export type ResultsStateType = {
   country: string;
   cityName: string;
   temperature: string;
@@ -13,7 +13,7 @@ type ResultsStateType = {
   icon: string;
 };
 
-function App() {
+const App: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const [city, setCity] = useState<string>('');
   const [results, setResults] = useState<ResultsStateType>({
