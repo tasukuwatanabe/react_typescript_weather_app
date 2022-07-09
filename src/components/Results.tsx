@@ -8,7 +8,7 @@ type ResultsPropsType = {
   };
 };
 
-function Results({ results }: ResultsPropsType) {
+const Results: React.FC<ResultsPropsType> = ({ results }) => {
   const { cityName, temperature, conditionText, icon } = results;
   return (
     <div>

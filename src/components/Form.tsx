@@ -3,7 +3,7 @@ type FormPropsType = {
   getWeather: (e: React.FormEvent<HTMLFormElement>) => void;
 };
 
-function Form({ getWeather, setCity }: FormPropsType) {
+const Form: React.FC<FormPropsType> = ({ getWeather, setCity }) => {
   return (
     <form onSubmit={getWeather}>
       <input
