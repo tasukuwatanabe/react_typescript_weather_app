@@ -8,19 +8,24 @@ type ResultsPropsType = {
   };
 };
 
-function Results(props: ResultsPropsType) {
+function Results({ results }: ResultsPropsType) {
+  const { cityName, temperature, conditionText, icon } = results;
   return (
     <div>
-      {props.results.cityName && <div>{props.results.cityName}</div>}
-      {props.results.temperature && <div>{props.results.temperature} <span>℃</span></div>}
-      {props.results.conditionText && (
+      {cityName && <div>{cityName}</div>}
+      {temperature && (
         <div>
-          <img src={props.results.icon} alt="icon" />
-          <span>{props.results.conditionText}</span>
+          {temperature} <span>℃</span>
+        </div>
+      )}
+      {conditionText && (
+        <div>
+          <img src={icon} alt='icon' />
+          <span>{conditionText}</span>
         </div>
       )}
     </div>
-  )
+  );
 }
 
 export default Results;
