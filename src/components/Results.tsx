@@ -11,7 +11,7 @@ type ResultsPropsType = {
 const Results: React.FC<ResultsPropsType> = ({ results }) => {
   const { cityName, temperature, conditionText, icon } = results;
   return (
-    <div>
+    <>
       {cityName && <div>{cityName}</div>}
       {temperature && (
         <div>
@@ -24,7 +24,7 @@ const Results: React.FC<ResultsPropsType> = ({ results }) => {
           <span>{conditionText}</span>
         </div>
       )}
-    </div>
+    </>
   );
 }
 
