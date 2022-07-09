@@ -121,7 +121,7 @@ button[disabled] {
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  margin: auto;
+  margin: 30px auto 0;
   animation: spin 2s linear infinite;
 }
 
